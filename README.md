@@ -39,12 +39,8 @@ Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能�
       "UpstreamPathTemplate": "", //上游服务模板
       "UpstreamHttpMethod": [ "Get" ],//上游方法类型Get,Post,Put
       "AddHeadersToRequest": {},//需要在转发过程中添加到Header的内容
-      "AddClaimsToRequest": {},
-      "RouteClaimsRequirement": {},
-      "AddQueriesToRequest": {},
-      "RequestIdKey": "",
-      "FileCacheOptions": {
-        "TtlSeconds": 0,
+      "FileCacheOptions": { //可以对下游请求结果进行缓存，主要依赖于CacheManager实现
+        "TtlSeconds": 10,
         "Region": ""
       },
       "ReRouteIsCaseSensitive": false,//重写路由是否区分大小写
@@ -63,15 +59,23 @@ Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能�
         "PeriodTimespan": 15,//恢复的时间间隔
         "Limit": 1 //请求数量
       }，
-      "QoSOptions": {
-        "ExceptionsAllowedBeforeBreaking": 0,
-        "DurationOfBreak": 0,
-        "TimeoutValue": 0
+      "QoSOptions": { //服务质量与熔断,熔断的意思是停止将请求转发到下游服务。当下游服务已经出现故障的时候再请求也是功而返，并且增加下游服务器和  API网关的负担。这个功能是用的Pollly来实现的，我们只需要为路由做一些简单配置即可
+        "ExceptionsAllowedBeforeBreaking": 0, //允许多少个异常请求
+        "DurationOfBreak": 0, //熔断的时间，单位为秒
+        "TimeoutValue": 0 //如果下游请求的处理时间超过多少则自如将请求设置为超时
       }
     }
   ],
-  "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:5000"
+  "Aggregates": [ //请求聚合
+    {
+      "ReRouteKeys": [ //设置需要聚合的路由key
+        "booking",
+        "passenger"
+      ],
+      "UpstreamPathTemplate": "/api/getbookingpassengerinfo" //暴露给外部的聚合请求路径
+    },
+  "GlobalConfiguration": { //全局配置节点
+    "BaseUrl": "https://localhost:5000" //网关基地址
   }
 }
 ```
@@ -95,7 +99,7 @@ Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能�
     "UpstreamHttpMethod": [ "Put", "Delete" ]
 }
 ```
-LoadBalancer将决定负载均衡的算法，目前支持下面三种配置
+LoadBalancer将决定负载均衡的算法，目前支持下面三种方式  
 1. LeastConnection – 将请求发往最空闲的那个服务器
 2. RoundRobin – 轮流发送
 3. NoLoadBalance – 总是发往第一个请求或者是服务发现
