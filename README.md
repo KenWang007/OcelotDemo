@@ -118,5 +118,5 @@ https://github.com/App-vNext/Polly
 Consul:   
 https://github.com/hashicorp/consul
 
-Microft Blog:  
+Microsoft Blog:  
 https://blogs.msdn.microsoft.com/cesardelatorre/2018/05/15/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/
