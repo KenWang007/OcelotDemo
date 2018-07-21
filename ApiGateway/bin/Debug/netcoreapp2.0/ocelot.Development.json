@@ -31,9 +31,7 @@
         "Expiry": 0
       },
       "RateLimitOptions": {
-        "ClientWhitelist": [
-          "127.0.1.1"
-        ],
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
         "Period": "1s",
         "PeriodTimespan": 15.0,
