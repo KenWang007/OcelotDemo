@@ -106,3 +106,17 @@ LoadBalancer将决定负载均衡的算法，目前支持下面三种方式
 1. LeastConnection – 将请求发往最空闲的那个服务器
 2. RoundRobin – 轮流发送
 3. NoLoadBalance – 总是发往第一个请求或者是服务发现
+
+
+## 参考资料
+http://ocelot.readthedocs.io/en/latest/index.html
+https://www.cnblogs.com/shanyou/p/7787183.html
+
+Polly:  
+https://github.com/App-vNext/Polly   
+
+Consul:   
+https://github.com/hashicorp/consul
+
+Microft Blog:  
+https://blogs.msdn.microsoft.com/cesardelatorre/2018/05/15/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/
