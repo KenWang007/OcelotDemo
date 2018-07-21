@@ -109,7 +109,7 @@ LoadBalancer将决定负载均衡的算法，目前支持下面三种方式
 
 
 ## 参考资料
-http://ocelot.readthedocs.io/en/latest/index.html
+http://ocelot.readthedocs.io/en/latest/index.html    
 https://www.cnblogs.com/shanyou/p/7787183.html
 
 Polly:  
