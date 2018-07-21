@@ -28,7 +28,7 @@ Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能�
 ## Ocelot的实现机制
 简单的来说它是一堆的asp.net core middleware组成的pipeline，当它拿到请求之后会用一个request builder来构造一个HttpRequestMessage发到下游的真实服务器，等下游的服务返回response之后再由一个middleware将它返回的HttpResponseMessage映射到HttpResponse上。   
 
-![图片名称](https://github.com/KenWang007/OcelotDemo/blob/master/isolate%20solution.png)
+![图片名称](https://github.com/KenWang007/OcelotDemo/blob/master/Api%20Gateway%20.png)
 
 ## Ocelot配置文件解析
 
