@@ -8,3 +8,8 @@
 6.添加configuration.json的配置文件  
 7.配置路由响应规则  
 8.启动服务并通过Api网关访问服务  
+
+## 为什么需要API网关？
+https://www.cnblogs.com/xiandnc/p/9270365.html
+
+## 
