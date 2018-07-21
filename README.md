@@ -30,7 +30,7 @@ Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能�
 
 ## Ocelot配置文件解析
 
-<pre>
+
 ```javascript
 {
   "ReRoutes": [
@@ -68,4 +68,3 @@ Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能�
   }
 }
 ```
-</pre>
