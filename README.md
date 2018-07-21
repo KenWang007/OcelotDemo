@@ -10,8 +10,8 @@
 8.启动服务并通过Api网关访问服务  
 
 ## 在学习之前你需要了解  
-服务发现：  
-反向代理：  
+服务发现：  https://www.cnblogs.com/xiaohanlin/p/8016803.html  
+反向代理：  https://www.cnblogs.com/Anker/p/6056540.html  
 API网关模式：https://www.cnblogs.com/xiandnc/p/9270365.html
 
 
@@ -29,11 +29,12 @@ Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能�
 简单的来说它是一堆的asp.net core middleware组成的pipeline，当它拿到请求之后会用一个request builder来构造一个HttpRequestMessage发到下游的真实服务器，等下游的服务返回response之后再由一个middleware将它返回的HttpResponseMessage映射到HttpResponse上。
 
 ## Ocelot配置文件解析
+
 {
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/api/booking",
-      "UpstreamPathTemplate": "/api/getbookinginformation", 
+      "DownstreamPathTemplate": "",
+      "UpstreamPathTemplate": "", 
       "UpstreamHttpMethod": [ "Get" ],
       "AddHeadersToRequest": {},
       "AddClaimsToRequest": {},
@@ -64,4 +65,3 @@ Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能�
     "BaseUrl": "https://localhost:5000"
   }
 }
-
