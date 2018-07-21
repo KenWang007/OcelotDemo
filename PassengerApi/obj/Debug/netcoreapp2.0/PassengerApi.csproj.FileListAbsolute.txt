@@ -1,0 +1,11 @@
+C:\Work\Net Core\DemoCode\PassengerApi\bin\Debug\netcoreapp2.0\PassengerApi.deps.json
+C:\Work\Net Core\DemoCode\PassengerApi\bin\Debug\netcoreapp2.0\PassengerApi.runtimeconfig.json
+C:\Work\Net Core\DemoCode\PassengerApi\bin\Debug\netcoreapp2.0\PassengerApi.runtimeconfig.dev.json
+C:\Work\Net Core\DemoCode\PassengerApi\bin\Debug\netcoreapp2.0\PassengerApi.dll
+C:\Work\Net Core\DemoCode\PassengerApi\bin\Debug\netcoreapp2.0\PassengerApi.pdb
+C:\Work\Net Core\DemoCode\PassengerApi\obj\Debug\netcoreapp2.0\PassengerApi.csproj.CoreCompileInputs.cache
+C:\Work\Net Core\DemoCode\PassengerApi\obj\Debug\netcoreapp2.0\PassengerApi.AssemblyInfoInputs.cache
+C:\Work\Net Core\DemoCode\PassengerApi\obj\Debug\netcoreapp2.0\PassengerApi.AssemblyInfo.cs
+C:\Work\Net Core\DemoCode\PassengerApi\obj\Debug\netcoreapp2.0\PassengerApi.dll
+C:\Work\Net Core\DemoCode\PassengerApi\obj\Debug\netcoreapp2.0\PassengerApi.pdb
+C:\Work\Net Core\DemoCode\PassengerApi\obj\Debug\netcoreapp2.0\PassengerApi.csprojAssemblyReference.cache

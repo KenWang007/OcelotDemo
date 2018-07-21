@@ -1,0 +1,11 @@
+C:\Work\Net Core\DemoCode\BookingApi\bin\Debug\netcoreapp2.0\BookingApi.deps.json
+C:\Work\Net Core\DemoCode\BookingApi\bin\Debug\netcoreapp2.0\BookingApi.runtimeconfig.json
+C:\Work\Net Core\DemoCode\BookingApi\bin\Debug\netcoreapp2.0\BookingApi.runtimeconfig.dev.json
+C:\Work\Net Core\DemoCode\BookingApi\bin\Debug\netcoreapp2.0\BookingApi.dll
+C:\Work\Net Core\DemoCode\BookingApi\bin\Debug\netcoreapp2.0\BookingApi.pdb
+C:\Work\Net Core\DemoCode\BookingApi\obj\Debug\netcoreapp2.0\BookingApi.csprojAssemblyReference.cache
+C:\Work\Net Core\DemoCode\BookingApi\obj\Debug\netcoreapp2.0\BookingApi.csproj.CoreCompileInputs.cache
+C:\Work\Net Core\DemoCode\BookingApi\obj\Debug\netcoreapp2.0\BookingApi.AssemblyInfoInputs.cache
+C:\Work\Net Core\DemoCode\BookingApi\obj\Debug\netcoreapp2.0\BookingApi.AssemblyInfo.cs
+C:\Work\Net Core\DemoCode\BookingApi\obj\Debug\netcoreapp2.0\BookingApi.dll
+C:\Work\Net Core\DemoCode\BookingApi\obj\Debug\netcoreapp2.0\BookingApi.pdb

@@ -1,0 +1,11 @@
+C:\Work\Net Core\DemoCode\ApiGateway\bin\Debug\netcoreapp2.0\ApiGateway.deps.json
+C:\Work\Net Core\DemoCode\ApiGateway\bin\Debug\netcoreapp2.0\ApiGateway.runtimeconfig.json
+C:\Work\Net Core\DemoCode\ApiGateway\bin\Debug\netcoreapp2.0\ApiGateway.runtimeconfig.dev.json
+C:\Work\Net Core\DemoCode\ApiGateway\bin\Debug\netcoreapp2.0\ApiGateway.dll
+C:\Work\Net Core\DemoCode\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.csproj.CoreCompileInputs.cache
+C:\Work\Net Core\DemoCode\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.AssemblyInfoInputs.cache
+C:\Work\Net Core\DemoCode\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.AssemblyInfo.cs
+C:\Work\Net Core\DemoCode\ApiGateway\bin\Debug\netcoreapp2.0\ApiGateway.pdb
+C:\Work\Net Core\DemoCode\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.csprojAssemblyReference.cache
+C:\Work\Net Core\DemoCode\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.dll
+C:\Work\Net Core\DemoCode\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.pdb

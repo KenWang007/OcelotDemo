@@ -1,0 +1,77 @@
+﻿{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/booking",
+      "UpstreamPathTemplate": "/api/getbooking",
+      "UpstreamHttpMethod": [ "Get" ],
+      "ReRouteIsCaseSensitive": false,
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8001
+        }
+      ],
+      "Key": "booking",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "PeriodTimespan": 15,
+        "Limit": 1
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/booking/{pnr}",
+      "UpstreamPathTemplate": "/api/getbooking/{pnr}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "ReRouteIsCaseSensitive": false,
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8001
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/passenger",
+      "UpstreamPathTemplate": "/api/getpassenger",
+      "UpstreamHttpMethod": [ "Get" ],
+      "ReRouteIsCaseSensitive": false,
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8002
+        }
+      ],
+      "Key": "passenger"
+    },
+    {
+      "DownstreamPathTemplate": "/api/passenger/{id}",
+      "UpstreamPathTemplate": "/api/getpassenger/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "ReRouteIsCaseSensitive": false,
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8002
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000"
+  },
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "booking",
+        "passenger"
+      ],
+      "UpstreamPathTemplate": "/api/getbookingpassengerinfo"
+    }
+  ]
+}
