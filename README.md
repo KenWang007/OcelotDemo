@@ -67,6 +67,7 @@ Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能�
       }
     }
   ],
+  "UseServiceDiscovery": false,//是否启用服务发现
   "Aggregates": [ //请求聚合
     {
       "ReRouteKeys": [ //设置需要聚合的路由key
