@@ -210,7 +210,7 @@ Prioirty优先级 :对多个产生冲突的路由设置优化级
     ]
   }
 ```
-具体课参考下面官方给出的demo：    
+具体可参考下面官方给出的demo：    
 https://github.com/ThreeMammals/Ocelot/tree/develop/samples/OcelotGraphQL 
 
 ## 参考资料
@@ -222,6 +222,8 @@ https://github.com/App-vNext/Polly
 
 Consul:   
 https://github.com/hashicorp/consul
+
+https://github.com/dotnet/home
 
 Microsoft Blog:  
 https://blogs.msdn.microsoft.com/cesardelatorre/2018/05/15/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/
