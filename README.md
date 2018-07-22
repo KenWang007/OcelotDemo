@@ -85,6 +85,7 @@ Github项目地址：https://github.com/ThreeMammals/Ocelot
   }
 }
 ```
+#### 负载均衡
 当我们路由到的下游服务有多个结点的时候，我们可以在DownstreamHostAndPorts中进行配置负载
 ```javascript
 {
@@ -110,6 +111,7 @@ LoadBalancer将决定负载均衡的算法，目前支持下面三种方式
 2. RoundRobin – 轮流发送
 3. NoLoadBalance – 总是发往第一个请求或者是服务发现
 
+#### 万能模板
 如果不希望对请求做任何的处理，则可以使用下面的万能模板：(万能模板的优先级最低，只要有其它的路由模板，其它的路由模板则会优先生效)
 ```javascript
 {
@@ -125,7 +127,8 @@ LoadBalancer将决定负载均衡的算法，目前支持下面三种方式
     "UpstreamHttpMethod": [ "Get" ]
 }
 ```
-Prioirty优先级 :对多个产生冲突的路由设置优化级
+#### Prioirty优先级 
+ 对多个产生冲突的路由设置优化级
 ```javascript
 {
     "UpstreamPathTemplate": "/goods/{catchAll}"
@@ -136,7 +139,8 @@ Prioirty优先级 :对多个产生冲突的路由设置优化级
     "Priority": 1
 }
 ```
-请求聚合：可以通过gateway将客户端的多个请求聚合然后将结果一次返回到客户端去，此时我们需要给每个模板指定一个key
+#### 请求聚合 
+可以通过gateway将客户端的多个请求聚合然后将结果一次返回到客户端去，此时我们需要给每个模板指定一个key
 ```javascript
 {
   "ReRoutes": [
