@@ -22,6 +22,7 @@ https://www.cnblogs.com/xiandnc/p/9270365.html
 ## Ocelot是什么？  
 Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能有：路由、请求聚合、服务发现、认证、授权、限流熔断、并内置了LoadBanalce以及集成了Service Fabric、Consul、Eureka等功能，这些功能只都只需要简单的配置即可使用。     
 Ocelot在腾讯的使用：https://customers.microsoft.com/en-us/story/tencent-telecommunications-dotnetcore    
+微软官方示例：https://github.com/dotnet-architecture/eShopOnContainers    
 ![图片名称](https://github.com/KenWang007/OcelotDemo/blob/master/Api%20Gateway%20.png)   
 
 Github项目地址：https://github.com/ThreeMammals/Ocelot    
