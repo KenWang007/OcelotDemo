@@ -151,7 +151,7 @@ Prioirty优先级 :对多个产生冲突的路由设置优化级
           "Port": 8001
         }
       ],
-      <font color="#0000dd">"Key": "booking"</font>
+      "Key": "booking"
     },
     {
       "DownstreamPathTemplate": "/api/passenger",
@@ -165,7 +165,7 @@ Prioirty优先级 :对多个产生冲突的路由设置优化级
           "Port": 8002
         }
       ],
-      <font color="#0000dd">"Key": "passenger"</font>
+      "Key": "passenger"
     }
   ],
   "GlobalConfiguration": {
