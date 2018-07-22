@@ -17,10 +17,11 @@ API网关模式：https://www.cnblogs.com/xiandnc/p/9270365.html
 
 ## 为什么需要API网关？  
 API网关：系统的暴露在外部的一个访问入口，类似于代理服务器，就像一个公司的门卫承担着寻址、限制进入、安全检查、位置引导、等功能  
-https://www.cnblogs.com/xiandnc/p/9270365.html
+https://www.cnblogs.com/xiandnc/p/9270365.html    
 
 ## Ocelot是什么？  
-Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能有：路由、请求聚合、服务发现、认证、授权、限流熔断、并内置了LoadBanalce以及集成了Service Fabric、Consul、Eureka等功能，这些功能只都只需要简单的配置即可使用。  
+Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能有：路由、请求聚合、服务发现、认证、授权、限流熔断、并内置了LoadBanalce以及集成了Service Fabric、Consul、Eureka等功能，这些功能只都只需要简单的配置即可使用。     
+Ocelot在腾讯的使用：https://customers.microsoft.com/en-us/story/tencent-telecommunications-dotnetcore    
 ![图片名称](https://github.com/KenWang007/OcelotDemo/blob/master/Api%20Gateway%20.png)   
 
 Github项目地址：https://github.com/ThreeMammals/Ocelot    
@@ -108,6 +109,108 @@ LoadBalancer将决定负载均衡的算法，目前支持下面三种方式
 2. RoundRobin – 轮流发送
 3. NoLoadBalance – 总是发往第一个请求或者是服务发现
 
+如果不希望对请求做任何的处理，则可以使用下面的万能模板：(万能模板的优先级最低，只要有其它的路由模板，其它的路由模板则会优先生效)
+```javascript
+{
+    "DownstreamPathTemplate": "/{url}",
+    "DownstreamScheme": "https",
+    "DownstreamHostAndPorts": [
+            {
+                "Host": "localhost",
+                "Port": 80,
+            }
+        ],
+    "UpstreamPathTemplate": "/{url}",
+    "UpstreamHttpMethod": [ "Get" ]
+}
+```
+Prioirty优先级 :对多个产生冲突的路由设置优化级
+```javascript
+{
+    "UpstreamPathTemplate": "/goods/{catchAll}"
+    "Priority": 0
+}
+{
+    "UpstreamPathTemplate": "/goods/delete"
+    "Priority": 1
+}
+```
+请求聚合：可以通过gateway将客户端的多个请求聚合然后将结果一次返回到客户端去，此时我们需要给每个模板指定一个key
+```javascript
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/booking",
+      "UpstreamPathTemplate": "/api/getbooking",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8001
+        }
+      ],
+      <font color="#0000dd">"Key": "booking"</font>
+    },
+    {
+      "DownstreamPathTemplate": "/api/passenger",
+      "UpstreamPathTemplate": "/api/getpassenger",
+      "UpstreamHttpMethod": [ "Get" ],
+      "ReRouteIsCaseSensitive": false,
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8002
+        }
+      ],
+      <font color="#0000dd">"Key": "passenger"</font>
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000"
+  },
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "booking",
+        "passenger"
+      ],
+      "UpstreamPathTemplate": "/api/getbookingpassengerinfo"
+    }
+  ]
+}
+```
+需要注意的是：
+1. 聚合服务目前只支持返回json
+2. 目前只支持Get方式请求下游服务
+3. 任何下游的response header并会被丢弃
+4. 如果下游服务返回404，聚合服务只是这个key的value为空，它不会返回404
+
+有木有觉得这里的聚合很类似于GraphQL的功能，但实际上在Ocelot中并不打算实现GraphQL的功能，因为毕竟Ocelot的主要职责是实现网关的功能，聚合只是其中的一个feature，GraphQL提供了一个库 <font color="#0000dd">graphql-dotnet </font>，我们可以用它来完成需要的功能，而在Ocelot中实现类似认证，授权等这样它擅长的事情：
+
+```javascript
+{
+    "ReRoutes": [
+        {
+            "DownstreamPathTemplate": "/graphql",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+              {
+                "Host": "yourgraphqlhost.com",
+                "Port": 80
+              }
+            ],
+            "UpstreamPathTemplate": "/graphql",
+            "DelegatingHandlers": [
+                "GraphQlDelegatingHandler"
+            ]
+        }
+    ]
+  }
+```
+具体课参考下面官方给出的demo：    
+https://github.com/ThreeMammals/Ocelot/tree/develop/samples/OcelotGraphQL 
 
 ## 参考资料
 http://ocelot.readthedocs.io/en/latest/index.html    
