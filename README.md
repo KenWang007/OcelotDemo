@@ -16,8 +16,8 @@ API网关模式：https://www.cnblogs.com/xiandnc/p/9270365.html
 
 
 ## 为什么需要API网关？  
-API网关：系统的暴露在外部的一个访问入口，类似于代理服务器，就像一个公司的门卫承担着寻址、限制进入、安全检查、位置引导、等功能 
-https://www.cnblogs.com/xiandnc/p/9270365.html    
+API网关：系统的暴露在外部的一个访问入口，类似于代理服务器，就像一个公司的门卫承担着寻址、限制进入、安全检查、位置引导、等功能     
+https://www.cnblogs.com/xiandnc/p/9270365.html        
 ![图片名称](https://github.com/KenWang007/OcelotDemo/blob/master/what%20is%20gateway.png)   
 
 
