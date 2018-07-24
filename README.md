@@ -16,10 +16,10 @@ API网关模式：https://www.cnblogs.com/xiandnc/p/9270365.html
 
 
 ## 为什么需要API网关？  
-API网关：系统的暴露在外部的一个访问入口，类似于代理服务器，就像一个公司的门卫承担着寻址、限制进入、安全检查、位置引导、等功能  
+API网关：系统的暴露在外部的一个访问入口，类似于代理服务器，就像一个公司的门卫承担着寻址、限制进入、安全检查、位置引导、等功能 
+https://www.cnblogs.com/xiandnc/p/9270365.html    
 ![图片名称](https://github.com/KenWang007/OcelotDemo/blob/master/what%20is%20gateway.png)   
 
-https://www.cnblogs.com/xiandnc/p/9270365.html    
 
 ## Ocelot是什么？  
 Ocelot是基于.NET Core实现的轻量级API网关，它包括的主要功能有：路由、请求聚合、服务发现、认证、授权、限流熔断、并内置了LoadBanalce以及集成了Service Fabric、Consul、Eureka等功能，这些功能只都只需要简单的配置即可使用。     
