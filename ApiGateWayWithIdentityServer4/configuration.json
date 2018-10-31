@@ -1,0 +1,32 @@
+﻿{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/inventory",
+      "UpstreamPathTemplate": "/api/getinventory",
+      "UpstreamHttpMethod": [ "Get" ],
+      "ReRouteIsCaseSensitive": false,
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5003
+        }
+      ],
+      "Key": "inventory",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "PeriodTimespan": 15,
+        "Limit": 1
+      }
+    }
+  ],
+  "AuthenticationOptions": {
+    "AuthenticationProviderKey": "useridentity",
+    "AllowScopes": [ "inventoryapi" ]
+  },
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5008"
+  }
+}

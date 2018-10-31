@@ -1,0 +1,14 @@
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\bin\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.deps.json
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\bin\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.runtimeconfig.json
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\bin\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.runtimeconfig.dev.json
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\bin\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.dll
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\bin\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.pdb
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\obj\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.csprojResolveAssemblyReference.cache
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\obj\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.csproj.CoreCompileInputs.cache
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\obj\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.RazorAssemblyInfo.cache
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\obj\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.RazorAssemblyInfo.cs
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\obj\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.AssemblyInfoInputs.cache
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\obj\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.AssemblyInfo.cs
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\obj\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.RazorTargetAssemblyInfo.cache
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\obj\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.dll
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateWayWithIdentityServer4\obj\Debug\netcoreapp2.1\ApiGateWayWithIdentityServer4.pdb

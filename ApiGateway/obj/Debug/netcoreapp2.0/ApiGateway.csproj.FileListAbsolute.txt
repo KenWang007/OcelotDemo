@@ -9,3 +9,17 @@ C:\Work\Net Core\DemoCode\ApiGateway\bin\Debug\netcoreapp2.0\ApiGateway.pdb
 C:\Work\Net Core\DemoCode\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.csprojAssemblyReference.cache
 C:\Work\Net Core\DemoCode\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.dll
 C:\Work\Net Core\DemoCode\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.pdb
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\bin\Debug\netcoreapp2.0\ApiGateway.deps.json
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\bin\Debug\netcoreapp2.0\ApiGateway.runtimeconfig.json
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\bin\Debug\netcoreapp2.0\ApiGateway.runtimeconfig.dev.json
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\bin\Debug\netcoreapp2.0\ApiGateway.dll
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\bin\Debug\netcoreapp2.0\ApiGateway.pdb
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.csprojResolveAssemblyReference.cache
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.csproj.CoreCompileInputs.cache
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.RazorAssemblyInfo.cache
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.RazorAssemblyInfo.cs
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.AssemblyInfoInputs.cache
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.AssemblyInfo.cs
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.RazorTargetAssemblyInfo.cache
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.dll
+C:\OpenSourceProject\NETCore\Ocelot\OcelotDemo\ApiGateway\obj\Debug\netcoreapp2.0\ApiGateway.pdb
