@@ -1,1 +1,1 @@
-Waitting, we are comming soon !
+Wait, we are comming soon !
